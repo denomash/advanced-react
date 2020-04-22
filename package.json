@@ -7,7 +7,8 @@
   "author": "Dennis Macharia <dennismacharia4747@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 start lib/server.js",
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev2": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -16,6 +17,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "jest": "^25.4.0",
+    "nodemon": "^2.0.3",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
