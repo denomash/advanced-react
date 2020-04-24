@@ -7,8 +7,8 @@
   "author": "Dennis Macharia <dennismacharia4747@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "dev2": "nodemon --exec babel-node lib/server.js",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev2": "cross-env NODE_PATH=./lib nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -29,6 +29,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^7.0.2",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "pm2": "^4.3.1",
