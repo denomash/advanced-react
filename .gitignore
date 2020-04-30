@@ -2,6 +2,8 @@ public/vendor.js
 public/app.js
 public/vendors~app~vendor.js
 public/vendors~vendor.js
+build/
+coverage/
 
 # Logs
 logs
