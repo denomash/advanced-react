@@ -37,7 +37,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^7.0.2",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lodash.debounce": "^4.0.8",
     "lodash.pickby": "^4.6.0",
     "pm2": "^4.3.1",
